@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube RemoveWatchLater</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+      text-align: center;
+      width: 300px; 
+    }
+    button {
+      margin: 10px 0;
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .flags-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0;
+    }
+    .flag {
+      width: 50px;
+      height: auto;
+      cursor: pointer;
+      margin: 0 10px;
+    }
+    .note {
+      font-size: 12px;
+      color: gray;
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>[You need to be on the WatchLater page first]</h1>
+  <h2>Choosing a language will start the process</h2>
+
+  <!-- Conteneur pour les drapeaux -->
+  <div class="flags-container">
+    <img id="french" class="flag" src="france.png" alt="Français" title="Français" />
+    <img id="english" class="flag" src="uk.png" alt="English" title="English" />
+  </div>
+
+  <button id="stop">STOP</button>
+
+  <!-- Note 1: Le script peut nécessiter un rechargement de la page -->
+  <div class="note">
+    (1): The script may require you to reload the page for it to work properly.
+  </div>
+
+  <!-- Note 2: On n'a pas besoin de rester sur l'onglet une fois le script en marche -->
+  <div class="note">
+    (2): Once the script is running, you don't need to stay on the tab.
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
